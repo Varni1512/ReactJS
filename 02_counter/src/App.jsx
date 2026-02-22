@@ -11,17 +11,17 @@ const App = () => {
     if(counter > 0){
       setCounter(counter - 1);
     } else {
-      
+      alert("no negative value available")
     }
   }
 
   return (
-    <>
+    <div>
       <h1>Counter</h1>
       <h2>Counter value: {counter}</h2>
       <button onClick={addValue}>Add value</button>
       <button onClick={removevalue}>Remove value</button>
-    </>
+    </div>
   )
 }
 
